@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apuntes de Programacion</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="robots" content="noindex">
+	<link rel="icon" href="icono.ico">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" href="../Blackvariant-Button-Ui-System-Folders-Alt-Utilities.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<h1>Apuntes de Programacion</h1>
+	</header>
+	<div class="section">
+		<a href="apuntesprog.html" class="pages">Inicio</a>
+		<a href="codes.html" class="pages">Codigos</a>
+	</div>
+
+	<div class="divisor">
+
+		<h1>Secciones:</h1>
+
+		<ol>
+			<li><a href="#1">Concepto de HTML semántico</a></li>
+			<li><a href="#2">Algunas etiquetas de texto</a></li>
+			<li><a href="#3">Algo sobre enlaces</a></li>
+			<li><a href="#4">Listas</a></li>
+			<li><a href="#5">Divs</a></li>
+			<li><a href="#6">Formularios</a></li>
+			<li><a href="#7">Metadatos</a></li>
+			<li><a href="#8">Nav</a></li>
+			<li><a href="#9">Section y Article</a></li>
+			<li><a href="#10">Aside</a></li>
+			<li><a href="#11">Footer</a></li>
+			<li><a href="#12">Tablas</a></li>
+			<li><a href="#13">Alt y title</a></li>
+			<li><a href="#14">Center</a></li>
+			<li><a href="#15">ID</a></li>
+			<li><a href="#16">Iconos</a></li>
+			<li><a href="#17">Formulario 1 - Calculadora</a></li>
+		</ol>
+
+		<br>
+
+		<h2 id="1">Concepto de HTML semántico</h2>
+		<p>Hay formas correctas o incorrectas de escribir en html, por ejemplo <b>&lt;h1&gt;<b> solo se debe poner una vez ya que posiciona en Google, el <b>&lt;h2&gt;<b> y el <b>&lt;h3&gt;<b> se pueden poner varias veces pero no hay que pasarse, y los <b>&lt;h4&gt;<b>, <b>&lt;h5&gt;<b> y el <b>&lt;h6&gt;<b> se pueden poner las veces que queramos.</p>
+
+		<br>
+
+		<h2 id="2">Algunas etiquetas de texto</h2>
+		<p>&lt;b&gt;<b>Negrita</b>&lt;/b&gt; <br> &lt;i&gt;<i>Italica</i>&lt;/i&gt; <br> &lt;strike&gt;<strike>Tachada</strike>&lt;/strike&gt; <br> &lt;small&gt;<small>Chiquita</small>&lt;/small&gt;</p>
+
+		<br>
+
+		<h2 id="3">Algo sobre enlaces</h2>
+		<p>Si queremos que el enlace <a> se abra en otra pestaña en el navegador tenemos que escribir lo siguiente:</p>
+		<img src="imagenes/pestaña.png">
+
+		<br><br>
+
+		<h2 id="4">Listas</h2>
+		<p>Existen dos tipos de listas, las listas desordenadas sirven para colocar los elementos de la lista con puntos y su etiqueta empieza con <b>&lt;ul&gt;</b> y un ejemplo de una lista con esta etiqueta es la siguiente:<br><br>
+
+			&lt;ul&gt;<br>
+			&lt;li&gt;Contenido&lt;/li&gt;<br>
+			&lt;/ul&gt;<br><br>
+
+			Resultado:
+
+			<ul>
+				<li>Contenido</li>
+			</ul><br><br>
+
+			La otra lista se hace casi igual pero tenemos que cambiar <b>&lt;ul&gt;</b> por <b>&lt;ol&gt;</b> y este sería su ejemplo:<br><br>
+
+			&lt;ol&gt;<br>
+			&lt;li&gt;Contenido&lt;/li&gt;<br>
+			&lt;/ol&gt;<br><br>
+
+			Resultado:
+
+			<ol>
+				<li>Contenido</li>
+			</ol><br><br>
+
+			La etiqueta &lt;li&gt; no hace falta cambiarla ya que seria como el lapiz o pluma y los &lt;ul&gt; y &lt;ol&gt; serian el papel
+
+		</p>
+
+		<br>
+
+		<h2 id="5">Divs</h2>
+		<p>Los divs se crean con esta etiqueta <b>&lt;div&gt;</b> y se usa para separar contenido como por ejemplo separar los productos en una tienda y también se usa para trabajar correctamente con el <b>SEO</b></p>
+
+		<br>
+
+		<h2 id="6">Formularios</h2>
+		<p>Para empezar a hacer un formulario necesitamos esta etiqueta <b>&lt;form&gt;</b> y añadirle otra etiqueta adentro que se llama <b>&lt;input&gt;</b></p>
+
+		<img src="imagenes/form1.png">
+
+		<p>El <b>name</b> se usa en un lenguaje de backend y funciona como un identificador, ya que aparte de que el form tenga muchos input también sirve para que el servidor escoja algún dato que necesite de los input.</p>
+
+		<img src="imagenes/form2.png">
+
+		<p>El <b>type</b> determina qué tipo de input es, si es de texto, de contraseña, de número, o email entre otros.</p>
+
+		<img src="imagenes/form3.png">
+
+		<p>Pero aun hay mas, si ponemos al input <b>required=””</b> no se va a poder enviar la información al servidor <b>(method=“post”)</b> a menos que tengamos todos los campos completados, como cuando una página dice “Oye pendejo te falto completar una parte de esta madre”, pero es mejor poner el required en el backend porque si no con el inspeccionado puede quitar eso y dejar informacion incompleta.<br><br>El textarea sirve para poner un campo de texto más grande pero es similar a un input y si le añadimos <b>readonly=””</b> el usuario no podrá escribir nada ahí, solo el texto que decidimos poner en el código.</p>
+
+		<img src="imagenes/form4.png">
+
+		<p>Y para enviar el formulario tenemos que poner la última etiqueta antes del form, y eso creará un botón que dirá <b>“Enviar”</b> dependiendo del idioma local.</p>
+
+		<img src="imagenes/form5.png">
+
+		<br><br>
+
+		<h2 id="7">Metadatos</h2>
+		<p>Los metadatos sirven para describir la información de la página web sobre que trata y de quien la creo o si tiene copyright, es como la información de la información, y se usa en la etiqueta <b>&lt;head&gt;</b> y para usar uno hay que escribir <b>&lt;meta&gt;</b></p>
+
+		<img src="imagenes/metadatos1.png">
+
+		<ul>
+
+			<li>El primer meta sirve para que la página acepte los acentos y otros caracteres especiales.</li>
+			<li>El segundo sirve para poner palabras claves, y si una persona busca alguna de esas palabras google o el buscador va a mostrar la página.</li>
+			<li>El tercero como su nombre lo dice sirve para hacer una descripción de la página</li>
+			<li>El cuarto sirve para poner el autor de la página</li>
+			<li>El quinto sirve para poner si la página tiene copyright</li>
+			<li>La ultima le indica al buscador si la página es indexable y si queremos que no sea indexable hay que poner <b>noindex</b>.</li>
+			
+		</ul>
+
+		<img src="imagenes/noindex.png">
+
+		<br><br>
+
+		<h2 id="8">Nav</h2>
+
+		<p>Para empezar a hacer un nav primero tenemos que crear el encabezado osea el <b>&lt;header&gt;</b> el header es como una presentación de qué trata la página el nav va dentro del header y el nav es el menú principal de cualquier página web, como el menú principal de youtube donde está el logotipo, la barra de busqueda, subir vídeo, mi cuenta etc. Y para ponerlas se utilizan listas desordenadas y en las listas donde están los <b>&lt;li&gt;</b> tenemos que poner los enlaces (El Nav y el Header debe de ser igual en todas las páginas que creemos)</p>
+
+		<img src="imagenes/nav.png">
+
+		<br><br>
+
+		<h2 id="9">Section y Article</h2>
+		<p>Una vez que tengamos el header y el nav, si la página es de un artículo de algún tema o algo, no tenemos que seguir poniendo <b>&lt;h1&gt;</b> o <b>&lt;p&gt;</b> o otras etiquetas, primero tenemos que escribir <b>&lt;article&gt;</b> pero también tenemos que poner <b>&lt;section&gt;</b> adentro y sirve por si vas a poner más artículos juntos, pero se tiene que poner obligatoriamente no importa si solo es uno.</p>
+
+		<img src="imagenes/sya.png">
+
+		<br><br>
+
+		<h2 id="10">Aside</h2>
+		<p>El Aside <b>&lt;article&gt;</b> sirve para poner a un lado de la página contenido extra y representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento.</p>
+
+		<img src="imagenes/aside1.png">
+
+		<br><br>
+
+		<h2 id="11">Footer</h2>
+		<p>El footer es el pie de página y sirve para decir si la página tiene copyright o poner las redes sociales de los creadores y básicamente solo es eso.</p>
+
+		<img src="imagenes/footer1.png">
+
+		<br><br>
+
+		<h2 id="12">Tablas</h2>
+		<p>Las tablas en html son como las que se hacen en word o en excel, las tablas tienen columnas y filas, y para crear una tabla necesitamos la etiqueta <b>&lt;table&gt;</b> y otras dos, la segunda es <b>&lt;tr&gt;</b> y para definir los capos por fila necesitamos la etiqueta <b>&lt;td&gt;</b>.</p>
+
+		<img src="imagenes/tabla1.png">
+
+		<p>Y el resultado sería este:</p>
+		<br>
+
+		<table>
+
+			<tr>
+				<td><b>Nombre</b></td>
+				<td><b>Apellido</b></td>
+				<td><b>Canal</b></td>
+				<td><b>Seguidores</b></td>
+			</tr>
+
+			<tr>
+				<td>Lucas</td>
+				<td>Dalto</td>
+				<td>Todo Tendencias</td>
+				<td>9.000</td>
+			</tr>
+			
+		</table>
+
+		<br><br>
+
+		<h2 id="13">Alt y title</h2>
+		<p>Cuando pongamos una imagen es importante poner un <b>alt</b> ya que esto es vital y muy importante para el seo, ya que define como una especie de título.</p>
+
+		<img src="imagenes/ayt1.png">
+
+		<p>También podemos poner <b>title</b> para que cuando el cursor esté en la imagen le aparezca el nombre de la imagen.</p>
+
+		<img src="imagenes/ayt2.png"><br>
+		<img src="imagenes/ayt3.png">
+
+		<br><br>
+
+		<h2 id="14">Center</h2>
+
+		<p>Como su nombre lo dice la etiqueta <b>&lt;center&gt;</b> centra todo el contenido que esté en medio de esta etiqueta, y lo pondrá en el centro de la página, pero no se recomienda utilizar center, es mejor hacerlo directamente con CSS.</p>
+
+		<img src="imagenes/center1.png">
+
+		<br><br>
+
+		<h2 id="15">ID</h2>
+
+		<p>Si no queremos mover la barra de navegación para que el usuario llegue más rápido al contenido al que vino, para eso tenemos que poner un enlace, pero no nos va a dirigir a otra página, nos va a dirigir a otra sección de la página, en enlace debe de tener un <b>#</b></p>
+
+		<img src="imagenes/id1.png">
+
+		<p>Y para que nos lleve a la otra sección tenemos que poner un ID a la etiqueta destino, ya que podemos tener 7673535685 etiquetas iguales, pero solo una nos llevará con el id que le pongamos.</p>
+
+		<img src="imagenes/id2.png">
+
+		<br><br>
+
+		<h2 id="16">Iconos</h2>
+		<p>Para poner un icono arriba en la pestaña de la página, tenemos que asegurarnos que la imagen que vayamos a usar tiene que terminar en <b>.ico</b> la etiqueta debe de estar en el <b>&lt;head&gt;</b>.</p>
+
+		<img src="imagenes/iconos1.png">
+
+		<br><br>
+
+		<h2 id="17">Formulario 1 - Calculadora</h2>
+		<p>Para crear una etiqueta con un formulario, se necesita usar la etiqueta &lt;form&gt; y otras mas, asi como un archivo de JavaScript. Pasos explicados con respecto a las imagenes:</p>
+
+		<img src="imagenes/form1cal01.png">
+
+		<p>Primero, hay que incluir un archivo de JavaScript, en la imagen fue nombrado como "kapket.js" luego en el archivo HTML, escribir la etiqueta &lt;form&gt;, y adentro, escribir &lt;label&gt;, que es como una etiqueta para mostrar que se necesita para llenar el primer campo. Luego esscribir el &lt;input&gt;, con el <b>type="number"</b>, ya que se trata de una calculadora y no un campo de texto, luego poner el <b>id="numero1"</b>, ya que con ese id, JavaScript podra sacar la informacion de dicho input para poder usarla en otra cosa, de igual manera, hay que repetir el proceso con el siguiente input que sera para el siguiente numero, pero con diferente id, porque si no habra problemas al ejecutar el codigo.</p>
+
+		<p>Luego, hay que poner la etiqueta para el boton llamada &lt;button&gt;, y el evento onclick, y poner el nombre de lo que JS va a hacer, en este caso, va a calcular el resultado de una suma, asi que se llamara "calcular" (Hay que poner (); despues del nombre elegido) y en medio de la etiqueta, se escribira "Sumar" para que el usuario vea que va hacer ese boton.</p>
+
+		<p>Por ultimo, pondremos un &lt;p&gt; y adentro una etiqueta llamada  &lt;span&gt; mas el id, el span, va hacer que JavaScript muestre el numero final, es decir, la suma de los dos numeros.</p>
+
+		<img src="imagenes/form1cal02.png">
+
+		<p>En el archivo JS, iniciaremos una funcion con el nombre que se puso en el evento onclick del boton, en este caso "calcular()" Lo que hace la primera variable llamada "num1" es saber el numero que se uso en el primer input, hay que poner "parseInt" debido a que se esta trabajando con numeros. y poner el ID que se le puso en dicho input, en el primero fue "numero1" junto con .value y hay que repetir el proceso con la segunda variable del segundo input.</p>
+
+		<p>La tercera variable hace que se puedan sumar las dos variables anteriores, y se crea como si se fuera a hacer una suma comun y corriente en la consola.</p>
+
+		<p>Ya por ultimo, la ultima variable hay que poner el ID que se puso en la etiqueta &lt;span&gt; ya pondra el resultado el archivo HTML, y al final de la linea de codigo, hay que poner el nombre de la variable que hace la suma, para mostrar la informacion almacenada en dicha variable.</p>
+
+		<p>Resultado:</p>
+
+		<img src="imagenes/form1cal03.png">
+
+
+		
+	</div>
+
+</body>
+</html>
