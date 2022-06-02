@@ -235,8 +235,33 @@
 		<p>Para poner un icono arriba en la pestaña de la página, tenemos que asegurarnos que la imagen que vayamos a usar tiene que terminar en <b>.ico</b> la etiqueta debe de estar en el <b>&lt;head&gt;</b>.</p>
 
 		<img src="imagenes/iconos1.png">
+			
+		<br><br>
 
+		<h2 id="17">Formulario 1 - Calculadora</h2>
+		<p>Para crear una etiqueta con un formulario, se necesita usar la etiqueta &lt;form&gt; y otras mas, asi como un archivo de JavaScript. Pasos explicados con respecto a las imagenes:</p>
 
+		<img src="imagenes/form1cal01.png">
+
+		<p>Primero, hay que incluir un archivo de JavaScript, en la imagen fue nombrado como "kapket.js" luego en el archivo HTML, escribir la etiqueta &lt;form&gt;, y adentro, escribir &lt;label&gt;, que es como una etiqueta para mostrar que se necesita para llenar el primer campo. Luego esscribir el &lt;input&gt;, con el <b>type="number"</b>, ya que se trata de una calculadora y no un campo de texto, luego poner el <b>id="numero1"</b>, ya que con ese id, JavaScript podra sacar la informacion de dicho input para poder usarla en otra cosa, de igual manera, hay que repetir el proceso con el siguiente input que sera para el siguiente numero, pero con diferente id, porque si no habra problemas al ejecutar el codigo.</p>
+
+		<p>Luego, hay que poner la etiqueta para el boton llamada &lt;button&gt;, y el evento onclick, y poner el nombre de lo que JS va a hacer, en este caso, va a calcular el resultado de una suma, asi que se llamara "calcular" (Hay que poner (); despues del nombre elegido) y en medio de la etiqueta, se escribira "Sumar" para que el usuario vea que va hacer ese boton.</p>
+
+		<p>Por ultimo, pondremos un &lt;p&gt; y adentro una etiqueta llamada  &lt;span&gt; mas el id, el span, va hacer que JavaScript muestre el numero final, es decir, la suma de los dos numeros.</p>
+
+		<img src="imagenes/form1cal02.png">
+
+		<p>En el archivo JS, iniciaremos una funcion con el nombre que se puso en el evento onclick del boton, en este caso "calcular()" Lo que hace la primera variable llamada "num1" es saber el numero que se uso en el primer input, hay que poner "parseInt" debido a que se esta trabajando con numeros. y poner el ID que se le puso en dicho input, en el primero fue "numero1" junto con .value y hay que repetir el proceso con la segunda variable del segundo input.</p>
+
+		<p>La tercera variable hace que se puedan sumar las dos variables anteriores, y se crea como si se fuera a hacer una suma comun y corriente en la consola.</p>
+
+		<p>Ya por ultimo, la ultima variable hay que poner el ID que se puso en la etiqueta &lt;span&gt; ya pondra el resultado el archivo HTML, y al final de la linea de codigo, hay que poner el nombre de la variable que hace la suma, para mostrar la informacion almacenada en dicha variable.</p>
+
+		<p>Resultado:</p>
+
+		<img src="imagenes/form1cal03.png">
+		
+		
 		
 	</div>
 
