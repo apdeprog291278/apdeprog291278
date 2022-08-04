@@ -29,6 +29,14 @@ header{
 	padding: 16px 20px;
 }
 
+.montserrat_alternates{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.righteous{
+	font-family: 'Righteous', cursive;
+}
+
 img{
 	float: none;
 	width: 512px;
