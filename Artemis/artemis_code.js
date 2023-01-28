@@ -528,7 +528,7 @@ function enviar(){
         
       ]
 
-    artemis.train(datosentrenar, {iterations: 1000, log: true, erroThresh: 0.005});
+    artemis.train(datosentrenar, {iterations: 100, log: true, erroThresh: 0.005});
 
     // Obtener una representación en JSON del estado de la red neuronal entrenada
     const json = artemis.toJSON();
