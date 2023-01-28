@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="artemis_style.css">
+    <link rel="stylesheet" href="fuente_quicksand.css">
+    <link rel="favicon" href="artemis_foto.jpg">
+    <script src="artemis_code.js"></script>
+    <script src="brain.js"></script>
+    <title>Artemis</title>
+</head>
+<body>
+
+    <div class="artemis_webpage" id="artemisone">
+        <div class="inicio">
+            <img src="artemis_foto.jpg">
+            <h2>Artemis</h2>
+            <div class="icon" onclick="start();"><p>➲</p></div>
+        </div>
+        <div class="conversacion">
+
+            <div class="human">
+                <img src="user_icon.png">
+                <p id="human_ask"></p>
+            </div>
+            <div class="artemis">
+                <img src="artemis_foto.jpg">
+                <p id="artemis_res"></p>
+            </div>
+
+        </div>
+        <div class="entrada">
+            <textarea  id="mensaje"></textarea>
+            <input type="button" value="↲" onclick="red();">
+        </div>
+    </div>
+
+    <div class="ocultar" id="trainart">
+
+        <h2>¿Deseas entrenar a Artemis?</h2>
+        <div class="botones">
+            <input type="button" value="Si" class="firint" onclick="enviar();">
+            <input type="button" value="Salir" class="lastint" onclick="volver();">
+        </div>
+        <div class="linktrain">
+            <p id="neurallink"></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
