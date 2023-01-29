@@ -4,7 +4,7 @@ function enviar(){
     var hum = document.getElementById("human_ask"); // Se pone la respuesta del usuario en su contenedor
     var art = document.getElementById("artemis_res"); // Se pone la respuesta de Artemis en su contenedor
 
-    const artemis = new brain.recurrent.LSTM();
+    const artemis = new brain.recurrent.LSTM({hiddenLayers: [225]});
     
     var holares = "Hola, en que te puedo ayudar?";
     var comoestas = "Estoy bien, gracias.";
