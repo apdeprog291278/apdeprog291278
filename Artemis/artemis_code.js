@@ -569,10 +569,10 @@ function red() {
     var art = document.getElementById("artemis_res"); // Se pone la respuesta de Artemis en su contenedor
 
     // Crear una nueva instancia de una red neuronal
-    const artemis = new brain.recurrent.LSTM();
+    const artemis = new brain.recurrent.LSTM({hiddenlayers: [850, 450, 250, 150, 50]});
 
     // Cargar el archivo JSON de la red neuronal entrenada
-    fetch("https://download1519.mediafire.com/jat4892rmtsg/rtub3n64ek9fdub/artemis.json")
+    fetch("https://apdeprog291278.github.io/artemis.json")
     .then((response) => response.json())
     .then((json) => {
         artemis.fromJSON(json);
