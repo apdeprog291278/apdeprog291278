@@ -5,11 +5,6 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-body{
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
 .artemis_webpage{
     width: 100vw;
     height: 100vh;
